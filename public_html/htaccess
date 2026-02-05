@@ -1,0 +1,47 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+RewriteCond %{HTTP_HOST} ^maziaevp.com [NC]
+RewriteRule ^(.*)$ http://www.maziaevp.com/$1 [L,R=301]
+
+Options -Indexes
+
+IndexIgnore *
+
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+    satisfy all
+</Files>
+
+<FilesMatch "\.(htaccess|json|ini|config|sh)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 3 months"
+  ExpiresByType image/jpg "access plus 3 months"
+  ExpiresByType image/jpeg "access plus 3 months"
+  ExpiresByType image/gif "access plus 3 months"
+  ExpiresByType image/png "access plus 3 months"
+  ExpiresByType text/css "access plus 3 months"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+<FilesMatch "\.(pdf)$">
+   ForceType application/octet-stream
+   Header set Content-Disposition attachment
+</FilesMatch>
