@@ -1,0 +1,121 @@
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Menu.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+@media screen and (max-width: 1279px) {
+
+    .menu-container {
+        position: fixed;
+        overflow: auto;
+        transform: translateY(-100%);
+        transition: transform 0.35s cubic-bezier(.2, .8, 1);
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--blk-2);
+    }
+
+    .menu-icon {
+        position: fixed;
+        z-index: 3;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .show-menu {
+        transform: translateY(0);
+    }
+}
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Dropdown.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.95);
+    }
+    80% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dropdown-controller {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1279px) {
+
+    .dropdown-menu {
+        display: none;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0 0 2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        transform-origin: top right;
+        box-shadow: 0 4px 15px hsla(0, 0%, 0%, 0.2);
+        z-index: 1;
+        max-width: 280px;
+        right: -1rem;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: var(--rad-1);
+        background-color: var(--wht);
+        animation: bounce 0.15s;
+        text-overflow: ellipsis;
+    }
+
+    .dropdown-menu a {
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .dropdown-menu:after {
+        content: '';
+        position: absolute;
+        top: -1rem;
+        right: 1.5rem;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom-color: #fff;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

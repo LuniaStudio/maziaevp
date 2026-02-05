@@ -1,0 +1,842 @@
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Photos.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+/* Index */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="index"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/index.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="index"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/index.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="index"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/index.webp");
+        background-size: 120%;
+        background-position: -60px -50px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Development 1 */
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="development-1"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/development-1.webp");
+        background-size: 120%;
+        background-position: -90px 0;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: 50px;
+        transform: scaleX(-1);
+    }
+}
+
+/* Development 2 */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="development-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/development-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="development-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/development-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="development-2"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/development-2.webp");
+        background-size: 120%;
+        background-position: -70px -20px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Integrations 1 */
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="integrations-1"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/integrations-1.webp");
+        background-size: 120%;
+        background-position: -60px -30px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -120px;
+    }
+}
+
+/* Integrations 2 */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="integrations-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/integrations-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="integrations-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/integrations-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="integrations-2"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/integrations-2.webp");
+        background-size: 110%;
+        background-position: -15px 0;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Reporting 1 */
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="reporting-1"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/reporting-1.webp");
+        background-position: -80px 0;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: 50px;
+        transform: scaleX(-1);
+    }
+}
+
+/* Reporting 2 */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="reporting-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/reporting-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="reporting-2"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/reporting-2.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="reporting-2"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/reporting-2.webp");
+        background-size: 120%;
+        background-position: -70px -20px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Index */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="offices"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/offices.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="offices"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/offices.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="offices"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/offices.webp");
+        background-size: 120%;
+        background-position: -50px -40px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* 404 */
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="404"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/404.webp");
+        background-size: 120%;
+        background-position: -60px -50px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Apps.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+/* Lunia */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="lunia-studio"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/lunia-studio.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="lunia-studio"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/lunia-studio.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="lunia-studio"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/lunia-studio.webp");
+        background-size: 120%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Rea Vetta hero */
+
+@media screen and (max-width: 767px) {
+
+    [data-photo="rea-vetta"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/rea-vetta.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+    [data-photo="rea-vetta"] {
+        display: block;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/wide/rea-vetta.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    [data-photo="rea-vetta"] {
+        position: absolute;
+        mask-image: url("../../images/mask.svg");
+        mask-repeat: no-repeat;
+        background-color: var(--wht);
+        background-image: url("../../images/photos/square/rea-vetta.webp");
+        background-size: 120%;
+        background-position: 70% 100%;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 700px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Rea Vetta case study 1 */
+
+[data-photo="rea-vetta-case-study-1"] {
+    border: solid 0.75rem #fff;
+    border-radius: 3rem 3rem 0 3rem;
+    background-image: url("../../images/photos/square/rea-vetta-case-study-1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+}
+
+/* Rea Vetta case study 2 */
+
+[data-photo="rea-vetta-case-study-2"] {
+    border: solid 0.75rem var(--gry);
+    border-radius: 3rem 3rem 0 3rem;
+    background-image: url("../../images/photos/square/rea-vetta-case-study-2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+}
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Partnerships.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+[data-logo="alpha-software"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/alpha-software.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 154px;
+    min-height: 40px;
+}
+
+[data-logo="global-micro"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/global-micro.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    min-height: 80px;
+}
+
+[data-logo="flowgear"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/flowgear.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 160px;
+    min-height: 40px;
+}
+
+[data-logo="rea-vetta"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/rea-vetta.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    min-height: 48px;
+}
+
+[data-logo="sophos"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/sophos.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 133px;
+    min-height: 22px;
+}
+
+[data-logo="microsoft-365"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/microsoft-365.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 59px;
+    min-height: 65px;
+}
+
+[data-logo="alpha-transform"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/alpha-transform.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 170.3px;
+    min-height: 40px;
+}
+
+[data-logo="alpha-anywhere"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/alpha-anywhere.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 172px;
+    min-height: 44px;
+}
+
+[data-logo="infor"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/infor.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    min-height: 80px;
+}
+
+[data-logo="lrc"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/lrc.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    min-height: 54px;
+}
+
+[data-logo="lunia-studio"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/lunia-studio.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 150px;
+    min-height: 62px;
+}
+
+[data-logo-size="big"] {
+    margin: 2rem;
+    transform: scale(1.35);
+}
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Lunia Studio showcase.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+[data-image="mazia-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/mazia-logo.svg");
+    background-size: 70px 48px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 48px
+}
+
+[data-image="focus-valuations-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/focus-valuations-logo.svg");
+    background-size: 90px 80px;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px
+}
+
+[data-image="garlic-growers-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/garlic-growers-logo.svg");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px
+}
+
+[data-image="mtwiza-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("..../images/logos/mtwiza-logo.svg");
+    background-size: 80px 70px;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 70px
+}
+
+[data-image="optimax-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/optimax-logo.svg");
+    background-size: 100px 69px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 69px
+}
+
+[data-image="rt-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/rt-logo.svg");
+    background-size: 90px 80px;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px
+}
+
+[data-image="solid-gold-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/solid-gold-logo.svg");
+    background-size: 170px 50px;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 50px
+}
+
+[data-image="vfisa-logo"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/logos/vfisa-logo.svg");
+    background-size: 100px 64px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 64px
+}
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+/** Icons.
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+[data-icon="users"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/users.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="umbrella"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/umbrella.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="piggy-bank"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/piggy-bank.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="dial"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/dial.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="streamlined"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/streamlined.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="document-view"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/document-view.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 48px;
+}
+
+[data-icon="folder-tree"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/folder-tree.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 48px;
+}
+
+[data-icon="connected"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/connected.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 48px;
+}
+
+[data-icon="smile"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/smile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="rocket"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/rocket.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="shield"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/shield.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 48px;
+}
+
+[data-icon="calendar-clock"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/calendar-clock.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="info"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/info.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="chart-user"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/chart-user.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="display-code"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/display-code.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="target"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/target.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+[data-icon="check"] {
+    display: block;
+    position: relative;
+    background-image: url("../../images/icons/check.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 34px;
+    height: 34px;
+}
