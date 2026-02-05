@@ -11,17 +11,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: SFTP mirror
-        uses: pressidium/lftp-mirror-action@v1
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          user: ${{ secrets.SFTP_USER }}
-          pass: ${{ secrets.SFTP_PASS }}
-          localDir: "./"
-          remoteDir: ${{ secrets.SFTP_REMOTE_DIR }}
-          delete: false
-          exclude: |
-            .git*
-            .github/
-            .env
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: SFTP mirror (force)
+        env:
+          HOST: ${{ secrets.SFTP_HOST }}
+          PORT: ${{ secrets.SFTP_PORT }}
+          USER: ${{ secrets.SFTP_USER }}
+          PASS: ${{ secrets.SFTP_PASS }}
+          REMOTE: ${{ secrets.SFTP_REMOTE_DIR }}
+        run: |
+          lftp -u "$USER","$PASS" -p "$PORT" "sftp://$HOST" <<EOF
+          set sftp:auto-confirm yes
+          set xfer:clobber on
+          mirror --reverse --verbose --parallel=2 --transfer-all --ignore-time --no-perms --no-umask \
+            --exclude-glob .git* \
+            --exclude-glob .github/ \
+            --exclude-glob .env \
+            ./ "$REMOTE"
+          bye
+          EOF
